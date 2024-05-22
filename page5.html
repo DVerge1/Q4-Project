@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Portfolio</title>
+<style>
+    .nav-item {
+        color: white
+    }
+    .navbar {
+        padding:15px
+    }
+    .nav-item {
+        margin-left: 20px;
+    }
+    #logo {
+        width: 90px;
+        height: 90px;
+    }
+    body {
+        background-color:#B3DEC1;
+    }
+    #port {
+        margin-top: 100px;
+    }
+    .text {
+        text-align: center;
+    }
+    #label {
+        font-style: oblique;
+    }
+    
+
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <img src="logo.png" alt="logo" id="logo" class="rounded-circle">
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav nav-tabs me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">First Quarter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Second Quarter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Third Quarter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">What's Next?</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Search">
+                    <button class="btn btn-success" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5 d-flex justify-content-center">
+        <h1 id="port">What's next?</h1>
+    </div> <br>
+<!-- body of text -->
+        <h5 class="text">As an ICT student, I expect to learn more about coding and development in the next year.</h5> <br>
+        <h5 class="text">I expect to expand my horizons and further develop my problem solving skills through the learning of python. </h5> <br>
+        <h5 class="text">Overall i am excited to see what the new school year will bring, see you then!</h5>
+<!-- comment section -->
+    <div class="container mt-5 d-flex justify-content-center">
+        <label for="comment" id="label">Comments:</label>
+    </div>
+    <div class="container mt-5 d-flex justify-content-center">
+        <textarea class="form-control" rows="5" id="comment"></textarea>   
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+<!-- back button -->
+<script>
+    function goPage(){
+        window.location='mainpage.html';
+    }
+</script>
+    <div class="container mt-5 d-flex justify-content-center">
+        <button onclick="goPage();">Back to Main Page</button>
+    </div>
+</body>
+</html>
